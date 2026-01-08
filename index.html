@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthan Praveen | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: black;
+            color: white;
+            scroll-behavior: smooth;
+        }
+        .font-script { font-family: 'Permanent Marker', cursive; }
+        .font-decorative { font-family: 'Cinzel', serif; }
+        .font-handwriting { font-family: 'Caveat', cursive; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        
+        /* Custom underline for section titles */
+        .dash-underline::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            background: repeating-linear-gradient(to right, #f59e0b 0, #f59e0b 20px, transparent 20px, transparent 40px, white 40px, white 60px, transparent 60px, transparent 80px);
+            margin-top: 10px;
+        }
+
+        /* Slide animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Smooth image hover */
+        .img-hover {
+            filter: grayscale(100%);
+            transition: all 0.5s ease;
+        }
+        .img-hover:hover {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-black text-white selection:bg-amber-500 selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-sm border-b border-gray-900">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-decorative text-xl tracking-widest text-amber-500">KP</div>
+            <div class="flex gap-4 md:gap-8 text-[10px] md:text-sm uppercase tracking-tighter">
+                <a href="#home" class="nav-link hover:text-amber-500 transition-colors">Home</a>
+                <a href="#about" class="nav-link hover:text-amber-500 transition-colors">About</a>
+                <a href="#work" class="nav-link hover:text-amber-500 transition-colors">Work</a>
+                <a href="#logo" class="nav-link hover:text-amber-500 transition-colors">Logo</a>
+                <a href="#photography" class="nav-link hover:text-amber-500 transition-colors">Photos</a>
+                <a href="#contact" class="nav-link hover:text-amber-500 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-16">
+            <div class="reveal">
+                <h1 class="text-6xl md:text-9xl font-script tracking-wider uppercase mb-16 md:mb-24 animate-pulse">
+                    PORTFOLIO
+                </h1>
+            </div>
+
+            <div class="reveal flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl w-full">
+                <div class="text-left flex-1">
+                    <h2 class="text-7xl md:text-[9rem] font-handwriting text-amber-500 leading-none">
+                        namaste !!
+                    </h2>
+                    <p class="text-xl md:text-3xl font-light mt-4 tracking-widest uppercase">
+                        BY <span class="font-medium">keerthan Praveen</span>
+                    </p>
+                </div>
+                <div class="flex-1 flex justify-center md:justify-end">
+                    <div class="relative w-64 h-80 md:w-96 md:h-[30rem] overflow-hidden rounded-2xl shadow-2xl shadow-amber-500/10">
+                        <img src="https://picsum.photos/seed/keerthan/800/1200" alt="Keerthan" class="img-hover w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 reveal">
+                <a href="#about" class="inline-flex items-center gap-2 bg-amber-500 text-black px-8 py-3 rounded-full font-bold hover:bg-white transition-all transform hover:-translate-y-1">
+                    Personal Details
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="min-h-screen flex flex-col justify-center items-center py-24 px-6 max-w-5xl mx-auto">
+            <div class="reveal text-center mb-16">
+                <h2 class="text-5xl md:text-8xl font-decorative tracking-tighter flex justify-center items-center gap-1 md:gap-3">
+                    <span class="text-white">A</span><span class="text-white">B</span><span class="text-white">O</span><span class="text-amber-500">U</span><span class="text-amber-500">T</span>
+                    <span class="mx-2 md:mx-4"></span>
+                    <span class="text-amber-500">M</span><span class="text-white">E</span>
+                </h2>
+                <div class="dash-underline w-full max-w-md mx-auto opacity-50 mt-4"></div>
+            </div>
+
+            <div class="reveal bg-zinc-900/30 p-8 md:p-16 rounded-[3rem] border border-white/5 backdrop-blur-md shadow-2xl">
+                <div class="text-lg md:text-2xl leading-relaxed font-light text-gray-200">
+                    <p class="mb-8">
+                        My name is <span class="text-amber-500 font-medium">Keerthan P</span>, a <span class="text-amber-500 font-medium">17-year-old</span> student from <span class="text-amber-500 font-medium">Bangalore</span>, currently pursuing my 12th grade at Bethany High School (NIOS).
+                    </p>
+                    <p class="mb-8">
+                        I am a <span class="text-amber-500 font-medium italic">calm, focused, and forward-thinking</span> individual with a strong interest in design and technology.
+                    </p>
+                    <p class="mb-8">
+                        Beyond academics, I enjoy playing football, exploring cooking, and spending time with family.
+                    </p>
+                    <p>
+                        I am also passionate about <span class="text-amber-500 font-medium underline decoration-amber-500/30">learning AI tools</span>, using them to support ideation and content creation, while developing skills in video editing and presentations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="py-24 px-6 max-w-7xl mx-auto">
+            <div class="reveal flex flex-col items-center mb-32">
+                <h2 class="text-7xl md:text-9xl font-decorative tracking-tighter uppercase">
+                    W<span class="text-amber-500">O</span>RK
+                </h2>
+                <div class="dash-underline w-full max-w-lg opacity-40"></div>
+                <p class="mt-8 text-xl text-gray-500 font-light tracking-widest uppercase">Sketchbook Gallery</p>
+            </div>
+
+            <div class="space-y-32">
+                <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-white/5 p-4 rounded-3xl border border-white/10 group overflow-hidden">
+                        <img src="https://picsum.photos/seed/dance/800/1000" alt="Stick Figure" class="img-hover w-full rounded-2xl">
+                    </div>
+                    <div class="text-2xl md:text-4xl leading-snug font-light">
+                        This is the pose of my friend dancing, but I have made it in <span class="text-amber-500 font-medium italic">stick figure</span>
+                    </div>
+                </div>
+
+                <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="text-2xl md:text-4xl leading-snug font-light order-2 md:order-1 text-right">
+                        This is a <span class="text-amber-500 font-medium italic">goat without a face</span>; please draw one, as it dislikes me.
+                    </div>
+                    <div class="bg-white/5 p-4 rounded-3xl border border-white/10 group overflow-hidden order-1 md:order-2">
+                        <img src="https://picsum.photos/seed/goat/800/800" alt="Goat" class="img-hover w-full rounded-2xl">
+                    </div>
+                </div>
+
+                <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="bg-white/5 p-4 rounded-3xl border border-white/10 group overflow-hidden">
+                        <img src="https://picsum.photos/seed/ant/800/600" alt="Ant" class="img-hover w-full rounded-2xl">
+                    </div>
+                    <div class="text-2xl md:text-4xl leading-snug font-light">
+                        In this image, the ant appears to be in a precarious situation <span class="text-amber-500 font-medium italic">(but let’s not delve into the reasons)</span>.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Logo Section -->
+        <section id="logo" class="min-h-screen py-24 bg-zinc-950 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="reveal flex items-center gap-4 mb-20">
+                    <h2 class="text-4xl md:text-6xl font-decorative">WORK LOGO :</h2>
+                    <div class="h-1 bg-amber-500 flex-1 max-w-[200px]"></div>
+                </div>
+
+                <div class="reveal grid grid-cols-1 lg:grid-cols-3 gap-16 items-center">
+                    <img src="https://picsum.photos/seed/sk1/600/800" alt="Sketch 1" class="rounded-3xl shadow-2xl img-hover">
+                    
+                    <div class="text-center">
+                        <p class="text-2xl md:text-4xl font-serif leading-tight mb-12">
+                            Designs of a logo for an <span class="text-amber-500 italic">imaginary company</span>
+                        </p>
+                        <div class="group inline-block cursor-pointer">
+                            <div class="text-8xl md:text-[12rem] font-bold tracking-tighter leading-none group-hover:text-amber-500 transition-colors">MV</div>
+                            <div class="h-2 w-full bg-white mt-2 group-hover:bg-amber-500 transition-all"></div>
+                            <p class="text-xl tracking-[0.5em] mt-6 uppercase font-decorative opacity-60">Men Of Words</p>
+                        </div>
+                    </div>
+
+                    <img src="https://picsum.photos/seed/sk2/600/800" alt="Sketch 2" class="rounded-3xl shadow-2xl img-hover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Section -->
+        <section id="photography" class="min-h-screen py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="reveal flex items-center gap-4 mb-20 justify-end text-right">
+                    <div class="h-1 bg-amber-500 flex-1 max-w-[200px]"></div>
+                    <h2 class="text-4xl md:text-6xl font-decorative">WORK PHOTOGRAPH :</h2>
+                </div>
+
+                <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
+                    <div class="aspect-[2/3] overflow-hidden rounded-t-[10rem] border-2 border-white/10">
+                        <img src="https://picsum.photos/seed/p1/600/900" class="img-hover w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-full border-2 border-white/10">
+                        <img src="https://picsum.photos/seed/p2/800/800" class="img-hover w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-square overflow-hidden rounded-[4rem] border-2 border-white/10">
+                        <img src="https://picsum.photos/seed/p3/800/800" class="img-hover w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+                    <img src="https://picsum.photos/seed/car1/800/500" class="rounded-[4rem] img-hover shadow-2xl">
+                    <img src="https://picsum.photos/seed/car2/800/500" class="rounded-[4rem] img-hover shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="min-h-screen flex flex-col justify-center items-center py-24 px-6 bg-zinc-950/50">
+            <div class="reveal mb-32 text-center">
+                <h2 class="text-7xl md:text-[10rem] font-script tracking-widest uppercase opacity-20">THANK YOU</h2>
+            </div>
+
+            <div class="reveal w-full max-w-4xl bg-white/5 p-10 md:p-20 rounded-[4rem] border border-white/10 backdrop-blur-2xl shadow-2xl">
+                <h3 class="text-4xl md:text-6xl font-decorative mb-2 uppercase">Contact Info :</h3>
+                <div class="h-1 bg-amber-500 w-32 mb-16"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-2xl md:text-4xl font-light">
+                    <div>
+                        <p class="text-amber-500 text-xs uppercase tracking-widest mb-2 font-bold">Call Me</p>
+                        <a href="tel:9035020873" class="hover:text-amber-500 transition-colors">9035020873</a>
+                    </div>
+                    <div>
+                        <p class="text-amber-500 text-xs uppercase tracking-widest mb-2 font-bold">Email Me</p>
+                        <a href="mailto:keerthanpraveen@gmail.com" class="hover:text-amber-500 transition-colors block break-all">keerthanpraveen@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="mt-20 flex flex-wrap gap-4">
+                    <div class="px-6 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-amber-500 hover:text-black transition-all cursor-pointer">Instagram</div>
+                    <div class="px-6 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-amber-500 hover:text-black transition-all cursor-pointer">LinkedIn</div>
+                    <div class="px-6 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-amber-500 hover:text-black transition-all cursor-pointer">Behance</div>
+                </div>
+            </div>
+
+            <div class="mt-32 reveal flex items-center gap-6 text-gray-600 uppercase tracking-[1em] text-[8px] md:text-xs">
+                <span>Designing</span> <div class="w-8 h-px bg-zinc-800"></div>
+                <span>The</span> <div class="w-8 h-px bg-zinc-800"></div>
+                <span>Future</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 text-center text-gray-700 text-xs uppercase tracking-widest border-t border-white/5">
+        &copy; 2025 Keerthan Praveen Portfolio. All rights reserved.
+    </footer>
+
+    <!-- All Portfolio Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Scroll reveal animations logic
+            const observerOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Navigation scroll-spy logic
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id') || '';
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-amber-500');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('text-amber-500');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
